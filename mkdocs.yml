@@ -1,0 +1,59 @@
+site_name: 'go-random'
+site_description: 'Documentation for go-random'
+site_author: 'go-random'
+site_url: 'https://go-random.xyz'
+copyright: 'Copyright &copy; 2024 go-random'
+index_page: index.md
+
+repo_name: go-random/docs
+repo_url: https://github.com/go-random/docs
+edit_uri: https://github.com/go-random/docs/edit/main/docs
+
+use_directory_urls: false
+
+nav:
+  - Home: index.md
+  - Packages:
+    - Number: packages/number/index.md
+
+theme:
+  name: material
+  logo: images/logo.png
+  favicon: images/favicon.png
+  palette:
+    scheme: hashicorp
+    primary: white
+    accent: blue
+  icon:
+    repo: fontawesome/brands/github
+  font: false
+  features:
+    - navigation.instant
+    - navigation.tracking
+    - navigation.sections
+    - navigation.expand
+    - navigation.footer
+    - navigation.tabs
+    - navigation.prune
+    - content.tabs.link
+    - content.action.edit
+
+markdown_extensions:
+  - admonition
+  - pymdownx.highlight
+  - pymdownx.superfences
+  - md_in_html
+  - attr_list
+  - toc:
+      permalink: true
+
+plugins:
+  - search
+
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/go-random
+
+extra_javascript:
+  - js/replace_links.js
